@@ -93,10 +93,26 @@ nav.nav-scrolled {
 }
 
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72rem;
   font-family: "Cinzel", serif;
   font-size: 0.76rem;
   letter-spacing: 0.25em;
   color: var(--gold);
+}
+
+.nav-logo-image {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.28));
+}
+
+.nav-logo-text {
+  display: inline-block;
+  line-height: 1.1;
 }
 
 .nav-toggle {
@@ -1087,6 +1103,20 @@ footer {
 
   .nav-toggle {
     display: inline-flex;
+  }
+
+  .nav-logo {
+    gap: 0.5rem;
+  }
+
+  .nav-logo-image {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-logo-text {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
   }
 
   .nav-links {

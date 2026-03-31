@@ -6,6 +6,7 @@ import jeanneImage from "./pictures of sisters/Sis Jeanne.jpeg?url";
 import mariaImage from "./pictures of sisters/Sis Maria.png?url";
 import marianeImage from "./pictures of sisters/Sis Mariane.PNG?url";
 import ritaImage from "./pictures of sisters/Sis Rita.PNG?url";
+import logoImage from "./sanmanilalogo.png?url";
 import teresaImage from "./pictures of sisters/Sis Teresa.jpg?url";
 
 const sisters = [
@@ -283,7 +284,10 @@ export default function App() {
         Skip to main content
       </a>
       <nav className={isScrolled ? "nav-scrolled" : ""}>
-        <div className="nav-logo">ΣAN SORORITY MANILA</div>
+        <div className="nav-logo">
+          <img className="nav-logo-image" src={logoImage} alt="ΣAN Sorority Manila logo" />
+          <span className="nav-logo-text">ΣAN SORORITY MANILA</span>
+        </div>
         <button
           type="button"
           className="nav-toggle"
